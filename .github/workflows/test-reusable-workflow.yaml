@@ -12,9 +12,9 @@ on:
 
 jobs:
   display-input-variable:
-    environment: development
+    environment: ${{ inputs.environment }}
     name: Display input variable
     runs-on: ubuntu-latest
     steps:
       - name: Outputs variable
-        run: echo ${{ inputs.variable }}
+        run: echo ${{ vars.variable }}
