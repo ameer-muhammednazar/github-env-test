@@ -5,5 +5,4 @@ jobs:
   testing-env-variable:
     uses: ./.github/workflows/test-reusable-workflow.yaml
     with:
-      variable: ${{ vars.TEST_VAR_NAME }}
       environment: development
