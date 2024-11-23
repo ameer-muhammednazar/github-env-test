@@ -5,4 +5,4 @@ jobs:
   testing-env-variable:
     uses: ./.github/workflows/test-reusable-workflow.yaml
     with:
-      environment: development
+      environment: staging

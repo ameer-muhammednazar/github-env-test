@@ -9,7 +9,7 @@ on:
 
 jobs:
   display-input-variable:
-    # environment: ${{ inputs.environment }}
+    environment: ${{ inputs.environment }}
     name: Display input variable
     runs-on: ubuntu-latest
     steps:
