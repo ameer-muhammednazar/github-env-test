@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Outputs variable
-        run: echo ${{ vars.variable }}
+        run: echo ${{ vars.TEST_VAR_NAME }}
