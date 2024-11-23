@@ -11,5 +11,8 @@ jobs:
     name: Display input variable
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Outputs variable
         run: echo ${{ inputs.variable }}
