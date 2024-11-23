@@ -3,8 +3,8 @@ on:
 
 jobs:
   testing-env-variable:
-  runs-on: ubuntu-latest
-  environment: development
-  steps:
-    - name: Output env variable
-      run: echo ${{ var.TEST_VAR_NAME }}
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: Output env variable
+        run: echo ${{ var.TEST_VAR_NAME }}
