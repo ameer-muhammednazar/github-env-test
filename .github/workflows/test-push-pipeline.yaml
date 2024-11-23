@@ -2,8 +2,12 @@ on:
   push
 
 jobs:
-  testing-env-variable:    
-    uses: ./.github/workflows/test-reusable-workflow.yaml
-    with:
-      variable: ${{ vars.TEST_VAR_NAME }}
+  testing-env-variable:
+    runs-on: ubuntu-latest
     environment: development
+    steps:
+      - name: Send ENV variable
+        uses: ./.github/workflows/test-reusable-workflow.yaml
+        with:
+          variable: ${{ vars.TEST_VAR_NAME }}
+    
