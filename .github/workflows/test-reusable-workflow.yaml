@@ -12,7 +12,7 @@ on:
 
 jobs:
   display-input-variable:
-    environment: ${{ inputs.environment }}
+    environment: development
     name: Display input variable
     runs-on: ubuntu-latest
     steps:
