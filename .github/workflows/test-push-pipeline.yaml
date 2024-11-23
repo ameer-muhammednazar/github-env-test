@@ -7,4 +7,4 @@ jobs:
     environment: development
     steps:
       - name: Output env variable
-        run: echo ${{ var.TEST_VAR_NAME }}
+        run: echo ${{ vars.TEST_VAR_NAME }}
