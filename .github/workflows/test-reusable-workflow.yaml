@@ -8,6 +8,6 @@ on:
 
 jobs:
   runs-on: ubuntu-latest
-    steps:
-      - name: Outputs variable
-        run: echo ${{ inputs.variable }}
+  steps:
+    - name: Outputs variable
+      run: echo ${{ inputs.variable }}
