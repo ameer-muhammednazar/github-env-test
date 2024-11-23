@@ -4,15 +4,17 @@ on:
       variable:
         type: string
         required: true
+      environment:
+        type: string
+        required: false
+        default: development
 
 
 jobs:
   display-input-variable:
+    environment: ${{ inputs.environment }}
     name: Display input variable
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Outputs variable
         run: echo ${{ inputs.variable }}
